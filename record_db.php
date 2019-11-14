@@ -1,6 +1,6 @@
 <?php
 	//declare variables for my database connection 
-	define('SERVERNAME', 'localhost');
+	define('SERVERNAME','localhost');
 	define('USERNAME', 'root');
 	define('PASSWORD', '');
 	define('DATABASE', 'awl2021');
@@ -15,4 +15,6 @@
 	}else{
 		echo "";
 	}
+
+	//check db_class.php in wtech-exams
 ?>

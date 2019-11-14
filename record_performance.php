@@ -1,28 +1,9 @@
 <?php
-	//declare variables for my database connection 
-	define('SERVERNAME', 'localhost');
-	define('USERNAME', 'root');
-	define('PASSWORD', '');
-	define('DATABASE', 'student_record');
-
-
-	//connection 
-	$connection = mysqli_connect(SERVERNAME,USERNAME,PASSWORD,DATABASE);
-
-	// Check connection
-	if (!$connection) {
-		die("Connection failed: " . mysqli_connect_error());
-	}else{
-		echo "connected to the database<br>";
-	}
-
-
+//call the database
+require('record_db.php');
 
 	//check which button has been clicked - create a button on the page that when clicked, would lead you to the records page
-  	
   	//this is for students. enter student id to check your report
-
-
 	//action to take place when submit button is clicked for sign-in
 	if (isset($_POST['lclicked'])) {
 
@@ -79,14 +60,7 @@
 										grade_score INT(4) NOT NULL,
 										grade VARCHAR(3) NOT NULL)";
 
-
-		
-
-		/*if lecturer_id == true
-		select * from $report
-
-	think about this again. I don't think it is neccessary
-		*/
+		// database connection
 
 		if (mysqli_query($connection,$sql)) {
   		    echo "Table report created successfully";
@@ -105,33 +79,6 @@
 
 		//run the query and store result
 		$result = mysqli_query($connection,$sql);
-
-/*
-		// close database connection
-	} else if (isset($_POST['rclicked'])) {
-
-		// get the submitted username and password
-		$name = $_POST['uname'];
-		$pass = $_POST['upass'];
-		$hash = md5($pass);
-
-		// create sql query to insert user into the database
-		$sql = "INSERT INTO user(Username,Password) VALUES('$name','$hass')";
-
-		//run the query and store result
-		$result = mysqli_query($connection,$sql);
-		
-		//check if results were retrieved
-		if ($result > 0) {
-	    	// redirect user to login page
-			header("Location: login.php");
-		} else {
-	    	// redirect user to register page
-			header("Location: register.php");
-			// display error
-			echo "Registration failed";
-		}
-*/
 
 		// close database connection
 		mysqli_close($connection);

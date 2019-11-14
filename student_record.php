@@ -37,10 +37,11 @@ include_once 'record_db.php';
 		// get the submitted username and password
 		$Student_id = $_POST['student_id'];
 		$pass = $_POST['upass'];
-		// $hash = md5($pass);
+		$hpass = password_hash('upass', PASSWORD_DEFAULT);
+
  
 		// create sql query to insert user into the database
-		$sql = "INSERT INTO student_rec(Student_id,Password) VALUES('$Student_id','$pass')";
+		$sql = "INSERT INTO student_rec(Student_id,Password) VALUES('$Student_id','$hpass')";
 
 		//run the query and store result
 		$result = mysqli_query($connection,$sql);
@@ -64,18 +65,18 @@ include_once 'record_db.php';
 		// get the submitted username and password
 		$student_id = $_POST['student_id'];
 		$pass = $_POST['upass'];
-		// $hash = md5($pass);
+		$hpass = password_hash('upass', PASSWORD_DEFAULT);
 
-		$sql = "SELECT * FROM Student_Grade,student_rec WHERE Student_Grade.Student_id='$student_id' && Password = '$pass'";
+		
+
+		$sql = "SELECT * FROM Student_Grade,student_rec WHERE Student_Grade.Student_id='$student_id' && Password = '$hpass'";
 
 			//run the query and store result
 			$result = mysqli_query($connection,$sql);
 
 			$resultCheck = mysqli_num_rows($result);
 
-			// if (!$resultCheck) {
-			// 	echo(mysqli_error($connection));
-			// }
+			
 
 
 			//check if results were retrieved
