@@ -3,18 +3,38 @@
 	define('SERVERNAME','localhost');
 	define('USERNAME', 'root');
 	define('PASSWORD', '');
-	define('DATABASE', 'awl2021');
+	define('DATABASE', 'awldb2021');
 
-
-	//connection 
 	$connection = mysqli_connect(SERVERNAME,USERNAME,PASSWORD,DATABASE);
 
 	// Check connection
 	if (!$connection) {
 		die("Connection failed: " . mysqli_connect_error());
 	}else{
-		echo "";
+		echo "connected to the database<br>";
 	}
+?>
 
-	//check db_class.php in wtech-exams
+<?php 
+/**
+ * Database Connection
+ */
+// class connect 
+// {
+// 	//properties
+// 	public $connection = null;
+
+// 	//connection 
+// 	function db_conn(){
+// 		$this -> $connection = mysqli_connect(SERVERNAME,USERNAME,PASSWORD,DATABASE);
+
+// 		// Check connection
+// 		if (!$connection) {
+// 			die("Connection failed: " . mysqli_connect_error());
+// 		}else{
+// 			echo "";
+// 		}
+// 	}
+// }
+
 ?>
