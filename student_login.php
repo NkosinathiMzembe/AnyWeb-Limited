@@ -11,9 +11,9 @@
 </head>
  
 
-<body background="img/bauxiteLogo.jpg">
+<body background="img/triangle.jpg">
 
-	<h1 style="color:#800000">STUDENT REPORT</h1>
+	<h1 style="color:white">STUDENT REPORT</h1>
 
 	<form method="POST" action="student_record.php">
 
