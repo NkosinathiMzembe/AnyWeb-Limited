@@ -5,6 +5,8 @@
 h4 {
 	text-align:center;
 	color:maroon;
+/*  transition: all 0.5s ease-in;
+*/
 } 
     
 a:link {
@@ -13,11 +15,189 @@ a:link {
 }
 
 a:hover {
-   color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 a:visited {
     color: white;
     text-decoration: none;
+}
+
+.centerImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*---------------------
+  About page
+-----------------------*/
+
+.about-text h5 {
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: red;
+}
+
+.about-text .about-list {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.about-text .about-list li {
+  font-size: 14px;
+  color: #636363;
+  margin-bottom: 10px;
+}
+
+.about-text .about-list li i {
+  color: #f6783a;
+}
+
+
+     /*Team*/
+.member {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+
+.member h5 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 5px;
+
+}
+
+.member p {
+  color: #f6783a;
+  margin-bottom: 0;
+  font-weight: 14;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.member:hover .member-pic:after {
+  opacity: 0.4;
+}
+
+
+.member .member-pic {
+  width: 20%;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+.member .member-pic:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+
+
+/*---------------------
+  Vision & Mission Section
+-----------------------*/
+
+.vision_mission-section {
+  position: relative;
+  background-image: url("img/about1.jpg");
+
+}
+
+.vision_mission-section:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.8;
+}
+
+.vision_mission-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.vision_mission-section .section-title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 50;
+}
+
+.vision_mission-list-item {
+  padding-left: 70px;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.side_img{
+  display: block;
+  margin-left: auto;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  width: 50%;
+  transition: all 0.9s ease-in;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+
+}
+
+.vision_mission-list-item span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  text-align: center;
+  border-radius: 50px;
+  background: #f6783a;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.vision_mission-list-item h5 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.vision_mission-list-item:after {
+  position: absolute;
+  content: '';
+  height: calc(100% - 45px);
+  left: 20px;
+  top: 48px;
+  border-left: 1px dashed #6c6e70;
+}
+
+.vision_mission-list-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.vision_mission-list-item:last-child:after {
+  display: none;
 }
