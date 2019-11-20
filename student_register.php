@@ -10,9 +10,9 @@
 
 
 </head>
-<body background="staff.jpg">
+<body background="img/bauxiteLogo.jpg">
 
-<h1>Register Form</h1>
+<h1 style="color:#800000; padding-top:5px">Register Form</h1>
 
 	<form method="POST" action="student_record.php">
 		<i class="fa fa-user-o" aria-hidden="true"></i>
