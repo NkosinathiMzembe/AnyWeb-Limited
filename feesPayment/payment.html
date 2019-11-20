@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>payment portal for fees</title>
+        <h2>Fees payment portal</h2>
+        <link rel="stylesheet" type="text/css" href="myfees.css">
+        <script src="paid.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    </head>
+    
+    <body>
+        <div id="senter">
+           
+            <form id="form" method="post" action="account.php">
+                
+                <label> Last Name: </label>
+                <input type="text" name="lname" id="lname" placeholder="eg.Dari " required><br><br>
+                <label>First Name: </label>
+                <input type="text" name="fname" id="fname" placeholder="eg.Jones " required><br><br>
+                <label>Country: </label>
+                <input type="text" name="country" id="country" placeholder="eg. Ghana" required><br><br>
+                <label> Credit card :</label>
+                <input type="number" maxlength="13" name="creditCard" id="creditCard" placeholder="eg. 123..." required><br><br>
+                <label>Amount ($): </label>
+                <input type="number" name="amount" id="amount" placeholder="eg. $1000" required><br><br>
+                <label>StudentId</label>
+                <input type="number" for="name" id="studentId" name="studentId" placeholder="eg. 22882021" required><br><br>
+                
+                <input type="submit" id="send" name="send" value="send" onclick="ValidateDataInput()">
+                
+                
+            </form>
+           <span id="showhere"></span>
+        
+        </div>
+        
+
+    
+    </body>
+</html>
+      
