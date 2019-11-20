@@ -4,6 +4,9 @@
 		<title>Student Record</title>
 		<link rel="stylesheet" type="text/css" href="form_style.css">
 		<style type="text/css">
+			h1{
+				text-align: center;
+			}
 			table {
 				border-collapse: collapse;
 				width: 100%;
@@ -27,6 +30,16 @@
 
 	<body>
 		<h1>Student Record</h1>
+
+		<div style="margin: 0 auto; text-align: right; font-size: 20px;">
+			<form action=".">
+			<label>Filter</label>
+			<input onkeyup="gotoServer()" type="text" size="25" name="sterm" id="shterm">
+			<input type="submit" name="findme" value="Search">
+		</form>
+			<span id="showhere"></span>
+		</div>
+
 
 		<?php
 			include_once("contact.php");

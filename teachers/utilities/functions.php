@@ -6,6 +6,7 @@
 		return $data;
 	}
 
+
 	function displayForm($id,$student_id,$course_name,$grade_score,$grade,$FormName) {
 		echo "<br>";
 
@@ -16,11 +17,11 @@
 				<input type='hidden' name='uid' value=$id>
 
 				<label>Student_id</label>
-				<input type='text' name='student_id' value=$student_id> 
+				<input type='text' name='student_id' value=$student_id readonly> 
 				<br><br>
 				
 				<label>Course Name</label>
-				<input type='text' id='course_name' name='course_name' value=$course_name>
+				<input type='text' id='course_name' name='course_name' value=$course_name readonly>
 				<br><br>
 
 				<label>Grade Score</label>
@@ -36,4 +37,3 @@
 			</form>";
 	}
 ?>
-//add read only to student_id & course

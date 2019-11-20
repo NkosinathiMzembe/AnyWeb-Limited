@@ -42,4 +42,5 @@
 			return $this->execute_query($queryString);
 		}
 	}
+
 ?>
