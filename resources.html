@@ -2,11 +2,25 @@
 <html>
 <head>
 	<title>Resources</title>
-	<link rel="stylesheet" href="styles.css">
+	  <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/redStar.png">
   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   	<meta name="viewport" content="width=device-width, initial-scale=1"/>
   	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!--Sweet Alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script>
+        //Handbook Alert
+        function handBook() {
+        swal("Handbook available at the administration office");}
+
+        //Handbook Alert
+        function schoolCalendar() {
+        swal("2019/20 Calender","01 Dec 2019 - Exams Begin\n10 Dec 2019 - Closing Applications\n17 Dec 2019 - School Closes\n01 Jan 2020 - School Resumes");}
+      </script>
+    
 	</head>
 	
 <body>
@@ -29,9 +43,6 @@
           </li>
           <li>
             <a href="academics.html">Academics</a>
-          </li>
-          <li>
-            <a href="studentLife.html">Student Life</a>
           </li>
           <li class="active">
             <a href="resources.html">Resources</a>
@@ -56,9 +67,6 @@
             <a href="academics.html">Academics</a>
           </li>
           <li>
-            <a href="studentLife.html">Student Life</a>
-          </li>
-          <li>
             <a href="resources.html">Resources</a>
           </li>
           <li>
@@ -69,7 +77,98 @@
     </nav>
   </div>
 
-<h4>RESOURCES</h4>
+  <!--Line Separator-->
+  <div class="col s12 grey lighten-3" style="height:5px"></div>
 
-</body>
+  <h4>Other Useful Resources</h4>
+
+  <!--flow text-->
+  <p class="flow-text center-align">The Following Are Resources And Tools For The Bauxite Community</p>
+      <!--   Resource Section 1  -->
+      <div class="row">
+        <div class="col s12 m4">
+            <h5 class="center">Office 365</h5>
+            <p class="center">
+            <a href="https://outlook.office365.com/"><img src="img/office.png" height="150px" width="150px"></a></p>
+        </div>
+
+        <div class="col s12 m4">
+            <h5 class="center">Fees Payment</h5>
+            <p class="center">
+            <a href="feesPayment/payment.html"><img src="img/fees.jpg" height="150px" width="150px"></a></p>
+        </div>
+
+        <div class="col s12 m4">
+            <h5 class="center">Academic Calender</h5>
+            <p class="center">
+            <a href="#!" onclick="schoolCalendar()"><img src="img/calendar.jpg" height="150px" width="150px"></a></p>
+        </div>
+      </div>
+
+      <!--   Resource Section 2  -->
+      <div class="row">
+        <div class="col s12 m4">
+            <h5 class="center">Become A Student</h5>
+            <p class="center">
+            <a href="admissions.html"><img src="img/becomeStudent.jpg" height="150px" width="150px"></a></p>
+        </div>
+
+        <div class="col s12 m4">
+            <h5 class="center">Student Handbook</h5>
+            <p class="center"> 
+            <a href="#!" onclick="handBook()"><img src="img/Handbook.jpg" height="150px" width="150px"></a></p>
+        </div>
+
+        <div class="col s12 m4">
+            <h5 class="center">Student Records</h5>
+            <p class="center">
+            <a href="studentRecords.html"><img src="img/records.png" height="150px" width="150px"></a></p>
+        </div>
+      </div>
+
+<!--line-->
+<div class="col s12 grey lighten-3" style="height:3px"></div>
+
+<!--Footer-->
+<footer class="page-footer red darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="grey-text text-lighten-2">Token of Appreciation</h5>
+          <p class="grey-text text-lighten-4">Bauxite International School Is Humbled By Your Act of Visiting This Website. We Do Not Take It For Granted And Look Forward To Hearing From You Soon.</p>
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="grey-text text-lighten-2">Quick Links</h5>
+          <ul>
+            <li><a class="white-text" href="admissions.html">Admissions</a></li>
+            <li><a class="white-text" href="academics.html">Academics</a></li>
+            <li><a class="white-text" href="resources.html">Resources</a></li>
+            <li><a class="white-text" href="donate.html">Donations</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="grey-text text-lighten-2">Contact Us</h5>
+          <ul>
+            <li>Mensah Wood Street</li>
+            <li>PMB. East Legon, Accra</li> 
+            <li>Phone | <a class="white-text" href="tel:+233550991297">+233550991297</a></li>
+            <li>Email | <a class="white-text" href="mailto:info@bauxite.com">info@bauxite.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="https://anyweblimited.wordpress.com">AnyWeb Limited</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--JavaScript Component-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script>$(".button-collapse").sideNav();</script>
+
+  </body>
 </html>

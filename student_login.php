@@ -11,10 +11,9 @@
 </head>
  
 
+<body background="img/triangle.jpg">
 
-<body background="teacher.jpg">
-
-	<h1>STUDENT REPORT</h1>
+	<h1 style="color:white">STUDENT REPORT</h1>
 
 	<form method="POST" action="student_record.php">
 
