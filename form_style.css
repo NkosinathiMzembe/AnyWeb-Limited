@@ -58,6 +58,6 @@ th {
 	color: white;
 	}
 
-tr: nth-child(even) {
-	background-color: grey;
+tr:nth-child(even) {
+	background-color: lightgrey;
 	}
